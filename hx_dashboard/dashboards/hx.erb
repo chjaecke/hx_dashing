@@ -1,0 +1,19 @@
+<% content_for(:title) { "HyperFlex Dashboard v0.1" } %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="cluster" data-view="Text" data-title="Cluster" data-text="<<CLUSTER_NAME>>"</div>
+    </li>
+	<li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+	  <div data-id="health" data-view="Textstatus" data-title="Health", data-text="<<HEALTH>>", data-moreinfo="Cluster Health"></div>
+	</li>
+	<li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="ds_capacity" data-view="List" data-unordered="true" data-title="Datastore Size" data-moreinfo="Datastore size in GB"></div>
+    </li>
+	<li data-row="2" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="ds_free" data-view="List" data-unordered="true" data-title="Datastore Free Capacity" data-moreinfo="Free capacity in GB"></div>
+    </li>
+  </ul>
+</div>
+
+
