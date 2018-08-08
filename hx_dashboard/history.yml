@@ -8,11 +8,11 @@ buzzwords: "data: {\"items\":[{\"label\":\"Turn-key\",\"value\":4},{\"label\":\"
   2.0\",\"value\":2},{\"label\":\"Leverage\",\"value\":1}],\"id\":\"buzzwords\",\"updatedAt\":1533718505}\n\n"
 datastores: "data: {\"items\":[{\"label\":\"AVI\",\"value\":427},{\"label\":\"Infrastructure\",\"value\":350},{\"label\":\"CCP\",\"value\":958},{\"label\":\"test\",\"value\":10},{\"label\":\"NTT\",\"value\":539},{\"label\":\"FI_TS\",\"value\":3},{\"label\":\"ds1\",\"value\":910},{\"label\":\"vCenter
   Content Library\",\"value\":1017}],\"id\":\"datastores\",\"updatedAt\":1533304759}\n\n"
-cluster: "data: {\"text\":\"hx-cluster\",\"id\":\"cluster\",\"updatedAt\":1533718569}\n\n"
-health: "data: {\"value\":\"HEALTHY\",\"status\":\"true\",\"id\":\"health\",\"updatedAt\":1533718569}\n\n"
-ds_free: "data: {\"items\":[{\"label\":\"Infrastructure\",\"value\":318},{\"label\":\"ds1\",\"value\":876},{\"label\":\"AVI\",\"value\":427},{\"label\":\"CCP\",\"value\":951},{\"label\":\"test\",\"value\":10},{\"label\":\"FI_TS\",\"value\":3},{\"label\":\"vCenter
-  Content Library\",\"value\":1017},{\"label\":\"NTT\",\"value\":537}],\"id\":\"ds_free\",\"updatedAt\":1533718569}\n\n"
+cluster: "data: {\"text\":\"hx-cluster\",\"id\":\"cluster\",\"updatedAt\":1533725853}\n\n"
+health: "data: {\"value\":\"HEALTHY\",\"status\":\"true\",\"id\":\"health\",\"updatedAt\":1533725853}\n\n"
+ds_free: "data: {\"items\":[{\"label\":\"ds1\",\"value\":876},{\"label\":\"AVI\",\"value\":427},{\"label\":\"CCP\",\"value\":951},{\"label\":\"Infrastructure\",\"value\":318},{\"label\":\"vCenter
+  Content Library\",\"value\":1017},{\"label\":\"test\",\"value\":10},{\"label\":\"NTT\",\"value\":537},{\"label\":\"FI_TS\",\"value\":3}],\"id\":\"ds_free\",\"updatedAt\":1533725853}\n\n"
 ds_capacity: "data: {\"items\":[{\"label\":\"CCP\",\"value\":1024},{\"label\":\"NTT\",\"value\":4095},{\"label\":\"Infrastructure\",\"value\":2047},{\"label\":\"vCenter
   Content Library\",\"value\":1024},{\"label\":\"ds1\",\"value\":1024},{\"label\":\"test\",\"value\":10},{\"label\":\"AVI\",\"value\":500},{\"label\":\"FI_TS\",\"value\":3}],\"id\":\"ds_capacity\",\"updatedAt\":1533559980}\n\n"
-ds_total: "data: {\"items\":[{\"label\":\"Infrastructure\",\"value\":2047},{\"label\":\"ds1\",\"value\":1024},{\"label\":\"AVI\",\"value\":500},{\"label\":\"CCP\",\"value\":1024},{\"label\":\"test\",\"value\":10},{\"label\":\"FI_TS\",\"value\":3},{\"label\":\"vCenter
-  Content Library\",\"value\":1024},{\"label\":\"NTT\",\"value\":4095}],\"id\":\"ds_total\",\"updatedAt\":1533718569}\n\n"
+ds_total: "data: {\"items\":[{\"label\":\"ds1\",\"value\":1024},{\"label\":\"AVI\",\"value\":500},{\"label\":\"CCP\",\"value\":1024},{\"label\":\"Infrastructure\",\"value\":2047},{\"label\":\"vCenter
+  Content Library\",\"value\":1024},{\"label\":\"test\",\"value\":10},{\"label\":\"NTT\",\"value\":4095},{\"label\":\"FI_TS\",\"value\":3}],\"id\":\"ds_total\",\"updatedAt\":1533725853}\n\n"
