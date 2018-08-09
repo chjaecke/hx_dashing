@@ -14,12 +14,14 @@ HX Dashing
   * [Changelog](#changelog)
 
 # Getting Started
-HX Dashing is deployed as a Docker container. You can either pull the container image from Docker or you can build it from scratch using the source code at Github.
+HX Dashing is deployed as a Docker container. You can either pull the container image from Docker Hub or you can build it from scratch using the source code at Github.
 
-Option 1: Pull the most recent image from Docker Hub: 
+**Option 1** 
+Pull the most recent image from Docker Hub: 
 `docker pull chjaecke/hx-dashing`
 
-Option 2: Download the source code from Github, change Docker to the downloaded folder and build the image from scratch:
+**Option 2**
+Download the source code from Github, change Docker to the downloaded folder and build the image from scratch:
 `docker build -t hx-dashing .`
 
 HX Dashing requires 4 parameters to start the dashboard:
@@ -35,12 +37,13 @@ Those parameters are passed to the Docker container through an env-file. The env
 `DASHING_IP=0.0.0.0`
 `DASHING_PORT=3030`
 
-The Dashing IP and Port are **optional** and should only be changed if you want to host the dashboard on a specific IP withing the container.
+The Dashing IP and Port are **optional** and should only be changed if you want to host the dashboard on a specific IP within the container.
 
 ## Get the HyperFlex Auth Token
 Before starting the dashboard container, you need to request an authorization token through the HyperFlex Rest API. There are various ways to get this token. It is important that you include the **Bearer** prefix in the env-file for the token parameter!
 
 1. **curl**
+
 Send a curl request to the HyperFlex Rest API to get the token. Replace the parameters HX_USER, HX_PASSWORD and HX_IP with your HyperFlex credentials.
 
     ```
@@ -53,7 +56,7 @@ Send a curl request to the HyperFlex Rest API to get the token. Replace the para
 
 2. **HyperFlex API Explorer**
 
-    1. Go to the HyperFlex API Explorer at: `https://10.1.1.14/apiexplorer/`
+    1. Go to the HyperFlex API Explorer at: `https://<<HX_IP>>/apiexplorer/`
     2. Login with root credentials
     3. Go to *Authentication Authorization and Accounting APIs*
     4. Click on *Expand Operations* besides Obtain Access Token
@@ -71,6 +74,7 @@ Send a curl request to the HyperFlex Rest API to get the token. Replace the para
     7. Inspect the response body to get the authorization token.
     
 3. **Postman**
+
 If you are familiar with Postman, you can also request the authorization token through a Rest API call against the HyperFlex API.
 
 ## Start the Container
@@ -78,10 +82,11 @@ By now, you have filled up the env-file with your HyperFlex and Dashboard parame
 Start the container with the following parameter:
 `docker run -ti -p 3030:3030 --name myHyperFlexDashboard chjaecke/hx-dashing`
 
-The dashboard should now be accessible at `localhost:3030/hx`.
+The dashboard should now be accessible at `localhost:3030/hx`. 
+See that the Dashing port 3030 is exposed on the host port 3030 when running the Docker image. 
 
 # Developer Information
-HX Dashing can easily be extended or modified since the dashboard is based on the popular dashing.io framework. You can add additional dashboard information in the dashboard/hx.erb file and fill it with data by creating new jobs. The helper class hx_helper.rb provides a ruby method to easily make API request towards the HyperFlex Rest API.
+HX Dashing can easily be extended or modified since the dashboard is based on the popular dashing.io framework. You can add additional dashboard information in the `dashboard/hx.erb` file and fill it with data by creating new jobs. The helper class `hx_helper.rb` provides a ruby method to easily make API requests towards the HyperFlex Rest API. The helper class is used in all other dashing jobs to fill the dahsboard with HyperFlex data.
 
 # Contributing
 All users are strongly encouraged to contribute patches, new scripts or ideas.
