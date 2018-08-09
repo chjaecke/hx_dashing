@@ -3,6 +3,8 @@ HX Dashing
 
 #### This projects implements a dashboard to display general information of a [Cisco HyperFlex](https://www.cisco.com/c/en/us/products/hyperconverged-infrastructure/index.html) cluster. Dashboard information includes cluster name, health and datastore information. The dashboard is based on the [dashing.io](http://dashing.io) framework. Installation is quite easy by deploying the dashboard as a Docker container. Additional HyperFlex information can be added to the dashboard by extending the dashing.io framework.
 
+![Screenshot](https://github.com/chjaecke/hx_dashing/blob/master/screenshot.JPG)
+
 ## Table of Contents
   
   * [Installation](#installation)
